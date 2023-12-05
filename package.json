@@ -4,7 +4,9 @@
   "description": "cms api is a content management system ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/olatocode/cms-api/issues"
   },
-  "homepage": "https://github.com/olatocode/cms-api#readme"
+  "homepage": "https://github.com/olatocode/cms-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.0.2",
+    "nodemon": "^3.0.2"
+  }
 }

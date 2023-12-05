@@ -1,5 +1,5 @@
 <!-- @format -->
 
-# Hack City Tech Assessment
+# Hack City Tech Assessments
 
 ## CMS (REST API)
