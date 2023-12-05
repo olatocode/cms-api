@@ -1,0 +1,24 @@
+{
+  "name": "cms-api",
+  "version": "1.0.0",
+  "description": "cms api is a content management system ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olatocode/cms-api.git"
+  },
+  "keywords": [
+    "posts",
+    "users",
+    "admin"
+  ],
+  "author": "Tobi Awosola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olatocode/cms-api/issues"
+  },
+  "homepage": "https://github.com/olatocode/cms-api#readme"
+}
