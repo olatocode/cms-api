@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/v1', require('./src/routes/users'));
+app.use('/api/v1', require('./src/routes/posts'));
 
 app.listen(port, () => {
   console.log(`CMS API is running on http://localhost:${port}`);
