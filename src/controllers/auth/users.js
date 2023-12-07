@@ -51,7 +51,12 @@ exports.login = async (req, res, next) => {
         message: 'Password Not Correct',
       });
     }
-
+    const data = {
+      id: emailExist._id,
+      firstname: emailExist.firstname,
+      lastname: emailExist.lastname,
+      email: emailExist.email,
+    };
     const token = await jwt.sign(data, SECRET_TOKEN, { expiresIn: '1h' });
     return res.status(200).json({
       status: 'Login successfully',
@@ -106,4 +111,4 @@ exports.updateAUser = async (req, res) => {
       message: error.message,
     });
   }
-}
+};
