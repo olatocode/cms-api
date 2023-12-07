@@ -12,7 +12,7 @@ dotenv.config();
 app.use(helmet());
 app.use(cors());
 
-const connectDB = require('./src/config/database/db');
+const connectDB = require('./config/database/db');
 const port = process.env.PORT || 3000;
 connectDB();
 
@@ -20,9 +20,9 @@ app.get('/', (req, res) => {
   res.send({ Home: 'Welcome To CMS API' });
 });
 
-app.use('/api/v1', require('./src/routes/users'));
-app.use('/api/v1', require('./src/routes/posts'));
-app.use('/api/v1', require('./src/routes/categories'));
+app.use('/api/v1', require('./routes/users'));
+app.use('/api/v1', require('./routes/posts'));
+app.use('/api/v1', require('./routes/categories'));
 
 app.listen(port, () => {
   console.log(`CMS API is running on http://localhost:${port}`);
